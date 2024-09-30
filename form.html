@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form>
+    <form action="http://192.168.2.173:8080" method="POST">
         <fieldset>
-            <label for=" " fname">First name:</label>
-            <input type="text" id="fname" name="" fname">
-            <label for="" lname">last name:</label>
-            <input type="" text" id="lname" name="lname">
+            <legend>Your name</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
         </fieldset>
         <fieldset>
+            <legend>Choose your favorite web tech</legend>
             <label>
                 <input type="radio" name="fav_tech" value="HTML" />
                 HTML
@@ -27,14 +30,16 @@
             <input type="radio" id="javascript" name="fav_tech" value="Javascript">
             <label for="javascript">Javascript</label>
         </fieldset>
-        
-        <label for="desktop">Desktop</label>
-        <input type="checkbox" id="desktop">
-        <label for="laptop">Laptop</label>
-        <input type="checkbox" id="laptop">
-        <label for="smartphone">Smartphone</label>
-        <input type="checkbox" id="smartphone">
-
+        <fieldset>
+            <legend>Choose devices you use now</legend>
+            <label for="desktop">Desktop</label>
+            <input type="checkbox" id="desktop" name="desktop">
+            <label for="laptop">Laptop</label>
+            <input type="checkbox" id="laptop" name="laptop">
+            <label for="smartphone">Smartphone</label>
+            <input type="checkbox" id="smartphone" name="smartphone">
+        </fieldset>
+        <button type="submit">Submit</button>
     </form>
 </body>
 

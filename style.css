@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+
+    fieldset {
+       
+        background: lightcyan;
+        legend{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            background: lightblue;
+        }
+    }
+    button{
+        width: 200px;
+        font-size: 2rem;
+        margin: auto;
+    }
+}
